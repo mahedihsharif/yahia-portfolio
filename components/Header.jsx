@@ -1,4 +1,5 @@
 import { Box, Grid, makeStyles, Typography } from "@material-ui/core";
+
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -15,6 +16,7 @@ const useStyles = makeStyles(() => ({
   subtitle: {
     color: "#FAFAFA",
     marginBottom: "3rem",
+    textAlign: "center",
   },
   icon: {
     color: "#FAFAFA",
@@ -39,9 +41,10 @@ const Header = () => {
               <Typography variant="h5" className={classes.subtitle}>
                 <Typed
                   strings={[
-                    "I am a Web Application Developer",
-                    "I am a Full Stack Developer",
-                    "I am a MERN Stack Developer",
+                    "Enterprenuer",
+                    "Businessman",
+                    "Learner",
+                    "Trainner",
                   ]}
                   typeSpeed={40}
                   backSpeed={60}
@@ -50,11 +53,21 @@ const Header = () => {
               </Typography>
             </div>
             <div className="flex gap-5">
-              <FacebookIcon className={classes.icon} />
-              <TwitterIcon className={classes.icon} />
-              <GoogleIcon className={classes.icon} />
-              <LinkedInIcon className={classes.icon} />
-              <InstagramIcon className={classes.icon} />
+              <a href="https://www.facebook.com/s.yahia71">
+                <FacebookIcon className={classes.icon} />
+              </a>
+              <a href="https://twitter.com/s_yahia97?fbclid=IwAR0qVU7cVUbpNscXJg96QaHxM_wpn4I2VbxjrIWJXghQg9B9AwYct5u72mg">
+                <TwitterIcon className={classes.icon} />
+              </a>
+              <a href="#">
+                <GoogleIcon className={classes.icon} />
+              </a>
+              <a href="https://www.linkedin.com/in/yahia183/">
+                <LinkedInIcon className={classes.icon} />
+              </a>
+              <a href="https://www.instagram.com/accounts/login/?next=%2Fsadekuzzaman_yahia%2F">
+                <InstagramIcon className={classes.icon} />
+              </a>
             </div>
           </Box>
         </div>
