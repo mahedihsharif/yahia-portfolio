@@ -42,7 +42,7 @@ const Navbar = () => {
               res ? "-ml-[100%] transition-all" : "ml-0 transition-all"
             }`}
           >
-            <ul className="menu menu-horizontal md:menu-vertical p-0 capitalize text-white text-[12px] font-[400] md:p-3">
+            <ul className="menu menu-horizontal  font-poppins md:menu-vertical p-0 capitalize text-white text-[14px] tracking-wide font-[300] md:p-3">
               <li>
                 <a>home</a>
               </li>

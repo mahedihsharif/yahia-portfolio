@@ -10,7 +10,7 @@ module.exports = {
         dancing: ["Dancing Script", "cursive"],
       },
       colors: {
-        darkBlue: "rgba(0, 12, 34, 0.6)",
+        darkBlue: "rgba(0, 0, 0, 0.6);",
         white: "#FAFAFA",
         black: "#000",
       },

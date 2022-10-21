@@ -11,12 +11,19 @@ import Navbar from "./Navbar";
 
 const useStyles = makeStyles(() => ({
   title: {
-    color: "chocolate",
+    color: "#FAFAFA",
+    letterSpacing: "3px",
+    fontSize: "60px",
+    fontFamily: "Poppins",
+    fontWeight: "bolder",
   },
   subtitle: {
     color: "#FAFAFA",
     marginBottom: "3rem",
     textAlign: "center",
+    fontSize: "48px",
+    fontFamily: "Poppins",
+    fontWeight: "bolder",
   },
   icon: {
     color: "#FAFAFA",
