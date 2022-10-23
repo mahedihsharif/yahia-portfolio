@@ -33,7 +33,7 @@ const Navbar = () => {
             </a>
           </div>
           <DehazeIcon
-            className="text-white hidden md:block cursor-pointer mr-5"
+            className="text-white hidden md:block cursor-pointer mr-5 text-3xl"
             onClick={() => setRes(!res)}
           />
 

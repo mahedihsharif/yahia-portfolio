@@ -35,13 +35,16 @@ const Header = () => {
   const classes = useStyles();
   return (
     <div className="h-[100vh]">
-      <div className="bg-[url('/images/bg.jpg')] bg-cover bg-center h-full">
+      <div className="bg-[url('/images/bg.jpg')] bg-cover bg-center min-w-fit  h-full">
         <div className="bg-darkBlue h-full">
           <Navbar />
           <Box className="flex flex-col justify-center items-center h-full">
             <Grid container justify="center" className="header-navbar"></Grid>
             <div className="header-navbar-text">
-              <Typography className={classes.title} variant="h4">
+              <Typography
+                className={`${classes.title} md:text-3xl  px-5 sm:text-base`}
+                variant="h4"
+              >
                 <Typed strings={["Sadekuzzaman Yahia"]} typeSpeed={40} />
               </Typography>
               <br />
