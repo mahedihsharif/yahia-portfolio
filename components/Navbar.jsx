@@ -1,4 +1,6 @@
 import DehazeIcon from "@mui/icons-material/Dehaze";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -17,6 +19,11 @@ const Navbar = () => {
     window.addEventListener("scroll", changeBackground);
   }, []);
 
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <>
       <div
@@ -28,7 +35,11 @@ const Navbar = () => {
       >
         <div className="container mx-auto flex justify-between items-center relative">
           <div className="">
-            <a className="btn btn-ghost normal-case text-4xl font-dancing text-white">
+            <a
+              className="btn btn-ghost normal-case text-4xl font-dancing text-white"
+              data-aos="zoom-in-left"
+              data-aos-delay="150"
+            >
               Yahia
             </a>
           </div>
@@ -44,25 +55,37 @@ const Navbar = () => {
           >
             <ul className="menu menu-horizontal  font-poppins md:menu-vertical p-0 capitalize text-white text-[14px] tracking-wide font-[300] md:p-3">
               <li>
-                <a>home</a>
+                <a data-aos="zoom-in-left" data-aos-delay="300">
+                  home
+                </a>
               </li>
               <li>
-                <a>about me</a>
+                <a data-aos="zoom-in-left" data-aos-delay="450">
+                  about me
+                </a>
               </li>
               <li>
-                <a>my service</a>
+                <a data-aos="zoom-in-left" data-aos-delay="600">
+                  my service
+                </a>
               </li>
               <li>
-                <a>work</a>
+                <a data-aos="zoom-in-left" data-aos-delay="900">
+                  work
+                </a>
               </li>
               <li>
-                <a>offered course</a>
+                <a data-aos="zoom-in-left" data-aos-delay="1150">
+                  offered course
+                </a>
               </li>
               <li>
-                <a>contact</a>
+                <a data-aos="zoom-in-left" data-aos-delay="1300">
+                  contact
+                </a>
               </li>
               <li tabIndex={0}>
-                <a>
+                <a data-aos="zoom-in-left" data-aos-delay="1350">
                   blog
                   <svg
                     className="fill-current"

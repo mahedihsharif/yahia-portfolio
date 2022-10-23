@@ -14,7 +14,11 @@ const About = () => {
         About Yahia
       </h1>
       <div className="flex justify-center gap-7 pt-16 md:flex-wrap">
-        <div className="md:w-full md:mx-auto px-4">
+        <div
+          className="md:w-full md:mx-auto px-4"
+          data-aos="fade-right"
+          data-aos-delay="150"
+        >
           <Image
             src="/images/myImg.jpg"
             alt="Picture of the author"
@@ -23,7 +27,11 @@ const About = () => {
             className="rounded"
           />
         </div>
-        <div className="w-2/4 md:w-full md:mx-auto px-4">
+        <div
+          className="w-2/4 md:w-full md:mx-auto px-4"
+          data-aos="fade-left"
+          data-aos-delay="300"
+        >
           <h2 className="font-poppins font-semibold text-3xl pb-5">About Me</h2>
           <p className="font-poppins font-light leading-8 text-justify">
             Lorem Ipsum is simply dummy text of the printing and typesetting
